@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+   <!-- <script src="shipei.js"></script>-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="shouxie.js"></script>
+    <script src="show.js"></script>
+    <style type="text/css">
+    	#myImg{
+    		background: #fff;
+		    display: inline-block;
+    		width: 100px;
+    	}
+    	#myImg img{
+    		width: 100%;
+    		height: auto;
+		    display: inline-block;
+    	}
+    	.modal-footer{
+    		text-align: center;
+    	}
+    	.modal-backdrop{
+    		background: #FFFFFF !important;
+    	}
+    	#myBackColor{
+    		display: none;
+    	}
+    	#myColor{
+    		display: none;
+    	}
+    </style>
+</head>
+<body>
+	<div id="qianzi">
+		<button class="btn btn-primary" type="button" style="position:relative">签字</button>
+		<div id="myImg">
+		
+		</div>
+	</div>
+	
+
+    
+
+</body>
+</html>
+<script>
+
+    $(function () {
+
+        $(".btn,.btn-primary").click(function () {
+            var wp = new WritingPad();
+            //wp.init();
+        });
+    });
+
+</script>	
